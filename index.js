@@ -24,9 +24,13 @@ inquirer.prompt([
         name: 'shapeColor',
     },
 ]).then((data) => {
+    
+    const svgShape = shapes;
 
-    //const svgShape = shapes
-
-    fs.writeFile('logo.svg', svgShape, (err) => err ? console.error(err) : console.log('Success!'));
+    if (data.text.length < 3 || data.text.length > 3) {
+        console.log('Please enter 3 characters');
+    } else {
+        fs.writeFile('logo.svg', svgShape, (err) => err ? console.error(err) : console.log('Success!'));
+    }
 
 });
