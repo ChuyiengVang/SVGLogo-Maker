@@ -1,0 +1,6 @@
+
+        <svg width="300" height="200">
+        <rect width="200" height="200" fill="blue"/>
+        <text x="100" y="110" text-anchor="middle" font-size="50" fill="red">CHU</text>  
+        </svg>
+        
