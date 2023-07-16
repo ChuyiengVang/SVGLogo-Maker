@@ -2,7 +2,7 @@
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- A node.js application used to create a simple svg logo
+ A node.js application used to create a simple svg logo using the inquirer package and tested using the jest package
 
  ![image](https://github.com/ChuyiengVang/READMEgenerator/assets/124082784/89b032b9-f9fc-407e-9a62-fc2322e2eef4)
 
