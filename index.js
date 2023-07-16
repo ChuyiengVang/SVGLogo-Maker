@@ -61,6 +61,6 @@ inquirer.prompt([
 
         const userSelection = shapeChoice(data);
 
-        fs.writeFile('logo.svg', userSelection, (err) => err ? console.error(err) : console.log('Success!'));
+        fs.writeFile('./example/logo.svg', userSelection, (err) => err ? console.error(err) : console.log('Success!'));
 
 });
