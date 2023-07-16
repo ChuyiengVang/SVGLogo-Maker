@@ -36,6 +36,15 @@ inquirer.prompt([
         type: 'input',
         message: 'Enter up to 3 letter text?',
         name: 'title',
+        validate: (data) => {
+
+            const message = `
+            Please enter 3 characters!!!`;
+
+            if (data.length > 3 || data.length < 3) {
+                 console.log(message);
+            } else { return true };
+        }
     },
     {
         type: 'input',
@@ -52,11 +61,6 @@ inquirer.prompt([
 
         const userSelection = shapeChoice(data);
 
-    if (data.title.length > 3) {
-        console.log('Please enter 3 letters')
-        return
-    } else {
         fs.writeFile('logo.svg', userSelection, (err) => err ? console.error(err) : console.log('Success!'));
-    };
 
 });
